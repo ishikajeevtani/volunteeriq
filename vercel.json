@@ -1,1 +1,1 @@
-{ "rewrites": [{ "source": "/api/(.*)", "destination": "/api/$1" }] }
+{ "functions": { "api/match.cjs": { "runtime": "@vercel/node@3" } }, "rewrites": [{ "source": "/api/match", "destination": "/api/match.cjs" }] }
