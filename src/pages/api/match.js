@@ -58,8 +58,6 @@ Only include volunteers with a match_score above 40. Sort by match_score descend
     }
 
     const text = data.choices[0].message.content.trim();
-
-    // Strip markdown fences if present
     const clean = text.replace(/```json|```/g, "").trim();
     const matches = JSON.parse(clean);
 
